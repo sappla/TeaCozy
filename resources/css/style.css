@@ -1,0 +1,25 @@
+
+
+
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+
+  border: 2px dotted blue;
+
+}
+
+
+
+
+
+
+div {
+
+
+
+
+  flex-basis: 50px;
+  border: 2px dotted red;
+}
