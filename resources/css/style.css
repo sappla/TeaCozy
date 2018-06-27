@@ -1,6 +1,30 @@
+/*
+Table of content
+
+- Universal styles
+
+- Header
+
+- Main Content
+
+- Footer
 
 
+*/
 
+h2,
+h4,
+p,
+a {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  opacity: 0.9;
+}
+
+body {
+  background-color: black;
+}
 
 main {
   display: flex;
