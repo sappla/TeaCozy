@@ -31,6 +31,7 @@ a {
 
 body {
   background-color: black;
+
 }
 
 /* - Header */
@@ -78,17 +79,32 @@ nav a:nth-of-type(2) {
 main {
   display: flex;
   flex-flow: column nowrap;
-
-  border: 2px dotted blue;
-
+  align-items: center;
 }
 
-/* - > Mission section */
-#hero {
+section {
+  margin: 0 0 30px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.banner {
+  align-self: stretch;
+  background-color: black;
+  text-align: center;
+  padding: 10px 40px;
+
+  border: 1px dotted red;
+}
+
+.banner h2 {
+  font-size: 33px;
+}
+
+/* - > Mission section */
+#hero {
   flex-basis: 700px;
   background-image: url("../media/images/img-mission-background.jpg");
   background-size: cover;
@@ -97,15 +113,61 @@ main {
   border: 1px dotted yellow;
 }
 
-.banner {
-  background-color: black;
+/* - > Featured section */
+#tea-month {
   align-self: stretch;
-  text-align: center;
-  padding: 10px 40px;
 
-  border: 1px dotted blue;
+  border: 1px dotted yellow;
 }
 
-.banner h2 {
-  font-size: 33px;
+.tea-cards-wrapper {
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  border: 1px dotted yellow;
+}
+
+.tea-card {
+  flex-basis: 300px;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  margin: 0 20px;
+
+  border: 1px dotted red;
+}
+
+.tea-name {
+  padding-top: 10px;
+}
+
+.tea-image {
+  flex-basis: 200px;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+}
+
+#box-1 .tea-image{
+  background-image: url(../media/images/img-berryblitz.jpg);
+}
+
+#box-2 .tea-image{
+  background-image: url(../media/images/img-spiced-rum.jpg);
+}
+
+#box-3 .tea-image{
+  background-image: url(../media/images/img-donut.jpg);
+}
+
+#box-4 .tea-image{
+  background-image: url(../media/images/img-myrtle-ave.jpg);
+}
+
+#box-5 .tea-image{
+  background-image: url(../media/images/img-bedford-bizarre.jpg);
 }
