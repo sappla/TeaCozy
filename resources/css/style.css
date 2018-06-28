@@ -20,6 +20,7 @@ Table of content
 
 /* - Universal styles */
 h2,
+h3,
 h4,
 p,
 a {
@@ -27,6 +28,7 @@ a {
   font-size: 22px;
   color: seashell;
   opacity: 0.9;
+  margin: 0;
 }
 
 body {
@@ -94,13 +96,15 @@ section {
   align-self: stretch;
   background-color: black;
   text-align: center;
-  padding: 10px 40px;
+  padding: 20px 40px;
 
   border: 1px dotted red;
 }
 
 .banner h2 {
   font-size: 33px;
+  padding-bottom: 15px;
+  margin: 0;
 }
 
 /* - > Mission section */
@@ -136,13 +140,13 @@ section {
   display: flex;
   flex-flow: column nowrap;
   text-align: center;
-  margin: 0 20px;
+  margin: 5px 20px;
 
   border: 1px dotted red;
 }
 
 .tea-name {
-  padding-top: 10px;
+  padding: 10px 0 20px 0;
 }
 
 .tea-image {
@@ -170,4 +174,59 @@ section {
 
 #box-5 .tea-image{
   background-image: url(../media/images/img-bedford-bizarre.jpg);
+}
+
+/* - > Locations section */
+#locations {
+  background-image: url("../media/images/img-locations-background.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 64px 0;
+
+  border: 1px dotted yellow;
+}
+
+#locations .banner {
+  background-color: transparent;
+  padding-bottom: 0px;
+}
+
+.loc-cards-wrapper {
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  border: 1px dotted yellow;
+}
+
+.loc-card {
+  background-color: black;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  padding: 10px;
+  margin: 5px 20px;
+  min-width: 300px;
+
+  border: 1px dotted red;
+}
+
+.loc-name {
+  font-size: 24px;
+  padding: 20px 0;
+}
+
+.loc-address {
+  padding: 20px 0;
+}
+
+/* - Footer */
+footer {
+
+
+  height: 300px;
+  border: 1px dotted green;
 }
