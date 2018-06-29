@@ -13,6 +13,8 @@ Table of content
   > Locations section
 
 - Footer
+  > Contact
+  >Copyright
 
 
 */
@@ -22,6 +24,7 @@ Table of content
 h2,
 h3,
 h4,
+h5,
 p,
 a {
   font-family: Helvetica;
@@ -225,8 +228,28 @@ section {
 
 /* - Footer */
 footer {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0 20px;
 
 
   height: 300px;
   border: 1px dotted green;
+}
+
+footer .banner {
+  flex-basis: 200px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+footer h5 {
+  font-size: 18px;
+  padding: 10px 0;
+}
+
+.copyright-info {
+  //font-size: 18px;
+  align-self: flex-start;
 }
