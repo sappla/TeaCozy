@@ -36,7 +36,6 @@ a {
 
 body {
   background-color: black;
-
 }
 
 /* - Header */
@@ -45,30 +44,40 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  background-color: black;
+  padding: 10px 10px 9px 10px;
   border-bottom: 1px solid seashell;
+  margin: 0;
 
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0.9;
+  z-index: 2;
 }
 
 /* - > Logo */
 .logo {
-  background-color: black;
+  margin: 0;
   flex: 20 1 250px;
-  padding: 0 10px;
+  height: 50px;
 }
 
 .logo img {
+  margin: 0;
   height: 50px;
 }
 
 /* - > Navigation */
 nav {
-  display: inline-flex;
+  display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
-  padding: 0 10px;
-  min-height: 50px;
+  padding: 0 20px; /* Why am I getting half of the specified padding on the right side of the nav bar? */
 }
 
 nav a {
@@ -82,6 +91,8 @@ nav a:nth-of-type(2) {
 
 /* - Main Content */
 main {
+  position: relative;
+  top: 140px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -100,8 +111,6 @@ section {
   background-color: black;
   text-align: center;
   padding: 20px 40px;
-
-  border: 1px dotted red;
 }
 
 .banner h2 {
@@ -116,15 +125,11 @@ section {
   background-image: url("../media/images/img-mission-background.jpg");
   background-size: cover;
   background-position: center;
-
-  border: 1px dotted yellow;
 }
 
 /* - > Featured section */
 #tea-month {
   align-self: stretch;
-
-  border: 1px dotted yellow;
 }
 
 .tea-cards-wrapper {
@@ -134,8 +139,6 @@ section {
   align-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-
-  border: 1px dotted yellow;
 }
 
 .tea-card {
@@ -144,8 +147,6 @@ section {
   flex-flow: column nowrap;
   text-align: center;
   margin: 5px 20px;
-
-  border: 1px dotted red;
 }
 
 .tea-name {
@@ -185,8 +186,6 @@ section {
   background-size: cover;
   background-position: center;
   padding: 64px 0;
-
-  border: 1px dotted yellow;
 }
 
 #locations .banner {
@@ -201,8 +200,6 @@ section {
   align-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-
-  border: 1px dotted yellow;
 }
 
 .loc-card {
@@ -213,8 +210,6 @@ section {
   padding: 10px;
   margin: 5px 20px;
   min-width: 300px;
-
-  border: 1px dotted red;
 }
 
 .loc-name {
@@ -228,13 +223,11 @@ section {
 
 /* - Footer */
 footer {
+  position: relative;
+  top: 140px;
   display: flex;
   flex-flow: column nowrap;
   margin: 0 20px;
-
-
-  height: 300px;
-  border: 1px dotted green;
 }
 
 footer .banner {
